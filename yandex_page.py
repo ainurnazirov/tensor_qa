@@ -73,11 +73,11 @@ class YandexPage(BasePage):
 
 
     def get_image_source(self):
-        return self.get_source((By.CSS_SELECTOR, '.MMImage-Origin'))
+        return self.get_source(self.IMAGE)
 
 
     def is_image_opened(self):
-        return self.get_element((By.CSS_SELECTOR, '.MMImage-Origin'))
+        return self.get_element(self.IMAGE)
 
 
     def click_button_forward(self):
